@@ -11,9 +11,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{AD9F0171-9D60-45EB-AB73-D6D81DFAE64C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Micro.Services.CouponAPI", "Micro.Services.CouponAPI\Micro.Services.CouponAPI.csproj", "{B4513B59-A91D-4816-8747-A078641C391F}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4513B59-A91D-4816-8747-A078641C391F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4513B59-A91D-4816-8747-A078641C391F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4513B59-A91D-4816-8747-A078641C391F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4513B59-A91D-4816-8747-A078641C391F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B4513B59-A91D-4816-8747-A078641C391F} = {AD9F0171-9D60-45EB-AB73-D6D81DFAE64C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F7D45AF1-2C9F-4EA3-807F-AF395E7BA95E}
