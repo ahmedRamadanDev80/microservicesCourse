@@ -110,7 +110,7 @@ namespace Micro.Services.CouponAPI.Controllers
         }
 
         [HttpDelete]
-        [Route("Delete/")]
+        [Route("Delete/{id:int}")]
         public ResponseDto Delete(int id)
         {
             try
