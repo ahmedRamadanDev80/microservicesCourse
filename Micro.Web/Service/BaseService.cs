@@ -3,10 +3,11 @@ using System.Net;
 using System.Text;
 using Newtonsoft.Json;
 using static Micro.Web.Utility.SD;
+using Micro.Web.Service.IService;
 
 namespace Micro.Web.Service
 {
-    public class BaseService
+    public class BaseService : IBaseService
     {
         private readonly IHttpClientFactory _httpClientFactory;
         public BaseService(IHttpClientFactory httpClientFactory)
