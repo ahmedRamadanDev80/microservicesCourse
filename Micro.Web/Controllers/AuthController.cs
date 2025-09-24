@@ -1,6 +1,8 @@
 ﻿using Micro.Web.Models;
 using Micro.Web.Service.IService;
+using Micro.Web.Utility;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Micro.Web.Controllers
 {
@@ -23,6 +25,13 @@ namespace Micro.Web.Controllers
         [HttpGet]
         public IActionResult Register()
         {
+            var roleList = new List<SelectListItem>()
+            {
+                new SelectListItem{Text=SD.RoleAdmin,Value=SD.RoleAdmin},
+                new SelectListItem{Text=SD.RoleCustomer,Value=SD.RoleCustomer},
+            };
+
+            ViewBag.RoleList = roleList;
             return View();
         }
 
