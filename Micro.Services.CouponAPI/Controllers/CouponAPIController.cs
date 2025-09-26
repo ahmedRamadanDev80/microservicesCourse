@@ -74,6 +74,7 @@ namespace Micro.Services.CouponAPI.Controllers
 
         [HttpPost]
         [Route("Create/")]
+        [Authorize(Roles = "ADMIN")]
         public ResponseDto Create([FromBody] CouponDto couponDto)
         {
             try
@@ -93,6 +94,7 @@ namespace Micro.Services.CouponAPI.Controllers
 
         [HttpPut]
         [Route("Edit/")]
+        [Authorize(Roles = "ADMIN")]
         public ResponseDto Edit([FromBody] CouponDto couponDto)
         {
             try
@@ -112,6 +114,7 @@ namespace Micro.Services.CouponAPI.Controllers
 
         [HttpDelete]
         [Route("Delete/{id:int}")]
+        [Authorize(Roles = "ADMIN")]
         public ResponseDto Delete(int id)
         {
             try
