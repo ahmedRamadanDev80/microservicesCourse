@@ -70,5 +70,18 @@ namespace Micro.Web.Controllers
             }
             return new CartDto();
         }
+
+        [HttpPost]
+        public async Task<IActionResult> EmailCart(CartDto cartDto)
+        {
+            ResponseDto? response = await _cartService.EmailCart(cartDto);
+            if (response != null & response.IsSuccess)
+            {
+                TempData["success"] = "Email will be processed and sent shortly.";
+                return RedirectToAction(nameof(CartIndex));
+            }
+            return View();
+        }
+
     }
 }

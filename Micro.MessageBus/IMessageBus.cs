@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Micro.MessageBus
 {
-    internal interface IMessageBus
+    public interface IMessageBus
     {
         Task PublishMessage(object message, string topic_queue_Name);
     }
