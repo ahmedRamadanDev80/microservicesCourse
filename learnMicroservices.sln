@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Micro.Services.ShoppingCart
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Micro.MessageBus", "Micro.MessageBus\Micro.MessageBus.csproj", "{53BCDAFD-ACFC-4061-B4E9-B665902B960B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Micro.Services.EmailAPI", "Micro.Services.EmailAPI\Micro.Services.EmailAPI.csproj", "{B13A6131-3B3A-4B44-A9AE-5FB7740A417C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{53BCDAFD-ACFC-4061-B4E9-B665902B960B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53BCDAFD-ACFC-4061-B4E9-B665902B960B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53BCDAFD-ACFC-4061-B4E9-B665902B960B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B13A6131-3B3A-4B44-A9AE-5FB7740A417C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B13A6131-3B3A-4B44-A9AE-5FB7740A417C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B13A6131-3B3A-4B44-A9AE-5FB7740A417C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B13A6131-3B3A-4B44-A9AE-5FB7740A417C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{C29BD018-DCA9-4CD5-9AC4-EA0B44A44E8E} = {AD9F0171-9D60-45EB-AB73-D6D81DFAE64C}
 		{6674FAC9-EEF0-432D-9043-68FBCB648FCF} = {AD9F0171-9D60-45EB-AB73-D6D81DFAE64C}
 		{53BCDAFD-ACFC-4061-B4E9-B665902B960B} = {F8E6ECDF-ED95-43AA-9E2F-055171DB51E3}
+		{B13A6131-3B3A-4B44-A9AE-5FB7740A417C} = {AD9F0171-9D60-45EB-AB73-D6D81DFAE64C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F7D45AF1-2C9F-4EA3-807F-AF395E7BA95E}
