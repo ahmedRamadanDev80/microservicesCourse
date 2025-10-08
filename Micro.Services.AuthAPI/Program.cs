@@ -4,6 +4,7 @@ using Micro.Services.AuthAPI.Services.IService;
 using Micro.Services.AuthAPI.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Micro.MessageBus;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +22,7 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFramework
 builder.Services.AddControllers();
 
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IMessageBus, MessageBus>();
 builder.Services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
